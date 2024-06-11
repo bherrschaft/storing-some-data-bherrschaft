@@ -1,5 +1,7 @@
 const groupNames = ["Christian", "Essence", "Patrick", "Brandon", "Brady"];
+
 const foodTypes = ["Pizza", "Sushi", "Burger", "Pasta", "Salad", "Tacos", "Steak", "Ice Cream", "Soup", "Sandwich"];
+
 const statesInfo = [
     ["California", "Sacramento", "California Quail"],
     ["Texas", "Austin", "Northern Mockingbird"],
