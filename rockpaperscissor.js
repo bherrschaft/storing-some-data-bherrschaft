@@ -58,6 +58,6 @@ function playTournament(players, playUntil) {
     return finalWinner;
 }
 
-// Testing the functions
+
 const tournamentPlayers = [player1, player2, player3, player4];
 playTournament(tournamentPlayers, 3);
