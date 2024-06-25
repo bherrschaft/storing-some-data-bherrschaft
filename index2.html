@@ -13,31 +13,39 @@
         <div class="card mt-4">
             <div class="card-body">
                 <div class="input-section">
+                    <!-- Input section for player name -->
                     <div class="form-group">
                         <label for="playerName">Enter your name:</label>
                         <input type="text" id="playerName" class="form-control">
                     </div>
+                    <!-- Button to start the tournament -->
                     <button class="btn btn-primary btn-block" onclick="startTournament()">Start Tournament</button>
                 </div>
                 <div class="game-section" style="display: none;">
+                    <!-- Section to display the scoreboard -->
                     <div id="scoreboard" class="scoreboard mt-4"></div>
+                    <!-- Buttons for player choices -->
                     <div class="choices mt-4">
                         <button class="btn btn-outline-primary mr-2" onclick="playUserRound('rock')" id="rock">Rock</button>
                         <button class="btn btn-outline-primary mr-2" id="paper" onclick="playUserRound('paper')" >Paper</button>
                         <button class="btn btn-outline-primary" id="scissors" onclick="playUserRound('scissors')" >Scissors</button>
                     </div>
+                    <!-- Section to display the results -->
                     <div class="results mt-4">
                         <div id="roundResult"></div>
                         <div id="overallResult" class="mt-2"></div>
                     </div>
+                    <!-- Button to reset the game -->
                     <button class="btn btn-secondary mt-4" onclick="resetGame()">Reset Game</button>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Include JavaScript libraries -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include the game script -->
     <script src="script2.js"></script>
 </body>
 </html>
