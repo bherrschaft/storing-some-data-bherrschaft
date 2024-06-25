@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Tournament</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Rock Paper Scissors Tournament</h1>
+        <div class="card mt-4">
+            <div class="card-body">
+                <div class="input-section">
+                    <div class="form-group">
+                        <label for="playerName">Enter your name:</label>
+                        <input type="text" id="playerName" class="form-control">
+                    </div>
+                    <button class="btn btn-primary btn-block" onclick="startTournament()">Start Tournament</button>
+                </div>
+                <div class="game-section" style="display: none;">
+                    <div id="scoreboard" class="scoreboard mt-4"></div>
+                    <div class="choices mt-4">
+                        <button class="btn btn-outline-primary mr-2" onclick="playUserRound('rock')" id="rock">Rock</button>
+                        <button class="btn btn-outline-primary mr-2" id="paper" onclick="playUserRound('paper')" >Paper</button>
+                        <button class="btn btn-outline-primary" id="scissors" onclick="playUserRound('scissors')" >Scissors</button>
+                    </div>
+                    <div class="results mt-4">
+                        <div id="roundResult"></div>
+                        <div id="overallResult" class="mt-2"></div>
+                    </div>
+                    <button class="btn btn-secondary mt-4" onclick="resetGame()">Reset Game</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
