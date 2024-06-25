@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
+    <!-- Add the image at the top -->
+    <div class="header-image">
+        <img src="images/rps.jpg" alt="Rock Paper Scissors Banner" class="img-fluid">
+    </div>
     <div class="container mt-5">
         <h1 class="text-center">Rock Paper Scissors Tournament</h1>
         <div class="card mt-4">
@@ -27,8 +31,8 @@
                     <!-- Buttons for player choices -->
                     <div class="choices mt-4">
                         <button class="btn btn-outline-primary mr-2" onclick="playUserRound('rock')" id="rock">Rock</button>
-                        <button class="btn btn-outline-primary mr-2" id="paper" onclick="playUserRound('paper')" >Paper</button>
-                        <button class="btn btn-outline-primary" id="scissors" onclick="playUserRound('scissors')" >Scissors</button>
+                        <button class="btn btn-outline-primary mr-2" id="paper" onclick="playUserRound('paper')">Paper</button>
+                        <button class="btn btn-outline-primary" id="scissors" onclick="playUserRound('scissors')">Scissors</button>
                     </div>
                     <!-- Section to display the results -->
                     <div class="results mt-4">
@@ -48,4 +52,6 @@
     <!-- Include the game script -->
     <script src="script2.js"></script>
 </body>
+</html>
+
 </html>
