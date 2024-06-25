@@ -294,6 +294,8 @@ function resetGame() {
     document.querySelector('.game-section').style.display = 'none';
     document.querySelector('.choices').style.display = 'block'; // Show the choices buttons
     document.getElementById('playerName').value = ''; // Clear the player name input
+    document.getElementById('roundResult').innerText = ''; // Clear the round result text
+    document.getElementById('overallResult').innerText = ''; // Clear the overall result text
     // Reset the onclick events for the choices buttons
     document.getElementById('rock').setAttribute("onClick", "javascript: playUserRound('rock');");
     document.getElementById('paper').setAttribute("onClick", "javascript: playUserRound('paper');");
